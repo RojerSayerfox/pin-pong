@@ -30,3 +30,19 @@ class Player(GameSprite):
            self.rect.y -= self.speed
        if keys[K_DOWN] and self.rect.y < win_height - 80:
            self.rect.y += self.speed
+
+
+
+
+back = (200, 255, 255)
+
+win_windth = 600
+win_height = 500
+window = display.set_mode((win_windth, win_height))
+window.fill(back)
+
+game = True
+finish = False
+clock = time.Clock()
+FPS = 60
+
